@@ -1,0 +1,90 @@
+.irs {
+	display: block; position: relative; -ms-user-select: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; user-select: none;
+}
+.irs-line {
+	overflow: hidden; display: block; position: relative;
+}
+.irs-line-left {
+	top: 0px; display: block; position: absolute;
+}
+.irs-line-mid {
+	top: 0px; display: block; position: absolute;
+}
+.irs-line-right {
+	top: 0px; display: block; position: absolute;
+}
+.irs-line-left {
+	left: 0px; width: 11%;
+}
+.irs-line-mid {
+	left: 9%; width: 82%;
+}
+.irs-line-right {
+	width: 11%; right: 0px;
+}
+.irs-bar {
+	left: 0px; width: 0px; display: block; position: absolute;
+}
+.irs-bar-edge {
+	left: 0px; top: 0px; display: block; position: absolute;
+}
+.irs-shadow {
+	left: 0px; width: 0px; display: none; position: absolute;
+}
+.irs-slider {
+	display: block; position: absolute; z-index: 1; cursor: default;
+}
+.irs-slider.single {
+	
+}
+.irs-slider.from {
+	
+}
+.irs-slider.to {
+	
+}
+.irs-slider.type_last {
+	z-index: 2;
+}
+.irs-min {
+	left: 0px; display: block; position: absolute; cursor: default;
+}
+.irs-max {
+	right: 0px; display: block; position: absolute; cursor: default;
+}
+.irs-from {
+	left: 0px; top: 0px; display: block; white-space: nowrap; position: absolute; cursor: default;
+}
+.irs-to {
+	left: 0px; top: 0px; display: block; white-space: nowrap; position: absolute; cursor: default;
+}
+.irs-single {
+	left: 0px; top: 0px; display: block; white-space: nowrap; position: absolute; cursor: default;
+}
+.irs-grid {
+	left: 0px; width: 100%; height: 20px; bottom: 0px; display: none; position: absolute;
+}
+.irs-with-grid .irs-grid {
+	display: block;
+}
+.irs-grid-pol {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 1px; height: 8px; position: absolute;
+}
+.irs-grid-pol.small {
+	height: 4px;
+}
+.irs-grid-text {
+	padding: 0px 3px; left: 0px; text-align: center; bottom: 0px; color: rgb(0, 0, 0); line-height: 9px; font-size: 9px; white-space: nowrap; position: absolute;
+}
+.irs-disable-mask {
+	background: rgba(0, 0, 0, 0); left: -1%; top: 0px; width: 102%; height: 100%; display: block; position: absolute; z-index: 2; cursor: default;
+}
+.lt-ie9 .irs-disable-mask {
+	background: rgb(0, 0, 0); cursor: not-allowed;
+}
+.irs-disabled {
+	opacity: 0.4;
+}
+.irs-hidden-input {
+	background: none !important; border-style: solid !important; border-color: transparent !important; margin: 0px !important; padding: 0px !important; left: 0px !important; top: 0px !important; width: 0px !important; height: 0px !important; line-height: 0 !important; font-size: 0px !important; display: block !important; position: absolute !important; z-index: -9999 !important;
+}
