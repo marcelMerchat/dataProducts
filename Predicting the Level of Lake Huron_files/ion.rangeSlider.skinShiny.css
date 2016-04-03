@@ -1,0 +1,84 @@
+.irs {
+	height: 40px;
+}
+.irs-with-grid {
+	height: 60px;
+}
+.irs-line {
+	background: linear-gradient(rgb(221, 221, 221) -50%, rgb(255, 255, 255) 150%); border-radius: 16px; border: 1px solid rgb(204, 204, 204); border-image: none; top: 25px; height: 8px; -moz-border-radius: 16px;
+}
+.irs-line-left {
+	height: 8px;
+}
+.irs-line-mid {
+	height: 8px;
+}
+.irs-line-right {
+	height: 8px;
+}
+.irs-bar {
+	background: rgb(66, 139, 202); top: 25px; height: 8px; border-top-color: rgb(66, 139, 202); border-bottom-color: rgb(66, 139, 202); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.irs-bar-edge {
+	background: rgb(66, 139, 202); border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(66, 139, 202) currentColor rgb(66, 139, 202) rgb(66, 139, 202); border-radius: 16px 0px 0px 16px; border-image: none; top: 25px; width: 14px; height: 8px; -moz-border-radius: 16px 0 0 16px;
+}
+.irs-shadow {
+	background: rgb(0, 0, 0); border-radius: 5px; top: 38px; height: 2px; opacity: 0.3; -moz-border-radius: 5px;
+}
+.lt-ie9 .irs-shadow {
+	
+}
+.irs-slider {
+	background: rgb(221, 221, 221); border-radius: 27px; border: 1px solid rgb(170, 170, 170); border-image: none; top: 17px; width: 22px; height: 22px; cursor: pointer; box-shadow: 1px 1px 3px rgba(0,0,0,0.3); -moz-border-radius: 27px;
+}
+#irs-active-slider {
+	background: rgb(255, 255, 255);
+}
+.irs-slider:hover {
+	background: rgb(255, 255, 255);
+}
+.irs-min {
+	background: rgba(0, 0, 0, 0.1); padding: 1px 3px; border-radius: 3px; top: 0px; color: rgb(51, 51, 51); line-height: 1.333; font-size: 10px; text-shadow: none; -moz-border-radius: 3px;
+}
+.irs-max {
+	background: rgba(0, 0, 0, 0.1); padding: 1px 3px; border-radius: 3px; top: 0px; color: rgb(51, 51, 51); line-height: 1.333; font-size: 10px; text-shadow: none; -moz-border-radius: 3px;
+}
+.lt-ie9 .irs-min {
+	background: rgb(204, 204, 204);
+}
+.lt-ie9 .irs-max {
+	background: rgb(204, 204, 204);
+}
+.irs-from {
+	background: rgb(66, 139, 202); padding: 1px 3px; border-radius: 3px; color: rgb(255, 255, 255); line-height: 1.333; font-size: 11px; text-shadow: none; -moz-border-radius: 3px;
+}
+.irs-to {
+	background: rgb(66, 139, 202); padding: 1px 3px; border-radius: 3px; color: rgb(255, 255, 255); line-height: 1.333; font-size: 11px; text-shadow: none; -moz-border-radius: 3px;
+}
+.irs-single {
+	background: rgb(66, 139, 202); padding: 1px 3px; border-radius: 3px; color: rgb(255, 255, 255); line-height: 1.333; font-size: 11px; text-shadow: none; -moz-border-radius: 3px;
+}
+.lt-ie9 .irs-from {
+	background: rgb(153, 153, 153);
+}
+.lt-ie9 .irs-to {
+	background: rgb(153, 153, 153);
+}
+.lt-ie9 .irs-single {
+	background: rgb(153, 153, 153);
+}
+.irs-grid {
+	height: 27px;
+}
+.irs-grid-pol {
+	background: rgb(66, 139, 202); opacity: 0.5;
+}
+.irs-grid-pol.small {
+	background: rgb(153, 153, 153);
+}
+.irs-grid-text {
+	bottom: 5px; color: rgb(153, 164, 172);
+}
+.irs-disabled {
+	
+}
