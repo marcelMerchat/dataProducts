@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -55,3 +56,147 @@
   
   </body>
 </html>
+=======
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0022)http://127.0.0.1:4592/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">  
+<SCRIPT type="application/shiny-singletons"></SCRIPT>
+  
+<SCRIPT type="application/html-dependencies">json2[2014.02.04];jquery[1.11.3];shiny[0.13.1];ionrangeslider[2.0.12];strftime[0.9.2];bootstrap[3.3.5]</SCRIPT>
+
+<SCRIPT src="shared/json2-min.js"></SCRIPT>
+ 
+<SCRIPT src="shared/jquery.min.js"></SCRIPT>
+ <LINK href="Predicting%20the%20Level%20of%20Lake%20Huron_files/shiny.css" rel="stylesheet"> 
+<SCRIPT src="shared/shiny.min.js"></SCRIPT>
+ <LINK href="Predicting%20the%20Level%20of%20Lake%20Huron_files/ion.rangeSlider.css" 
+rel="stylesheet"> <LINK href="Predicting%20the%20Level%20of%20Lake%20Huron_files/ion.rangeSlider.skinShiny.css" 
+rel="stylesheet"> 
+<SCRIPT src="shared/ionrangeslider/js/ion.rangeSlider.min.js"></SCRIPT>
+ 
+<SCRIPT src="shared/strftime/strftime-min.js"></SCRIPT>
+ 
+<META name="viewport" content="width=device-width, initial-scale=1"> <LINK href="Predicting%20the%20Level%20of%20Lake%20Huron_files/bootstrap.min.css" 
+rel="stylesheet"> 
+<SCRIPT src="shared/bootstrap/js/bootstrap.min.js"></SCRIPT>
+ 
+<SCRIPT src="shared/bootstrap/shim/html5shiv.min.js"></SCRIPT>
+ 
+<SCRIPT src="shared/bootstrap/shim/respond.min.js"></SCRIPT>
+  <TITLE>Predicting the Level of Lake Huron</TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.10586.162"></HEAD> 
+<BODY>
+<DIV class="container-fluid">
+<DIV class="row">
+<DIV class="col-sm-12">
+<H1>Predicting the Level of Lake Huron</H1></DIV></DIV>
+<DIV class="row">
+<DIV class="col-sm-4">
+<FORM class="well">
+<H4>A Project for the John Hopkins Coursera Data Product Class</H4>
+<H5>Prepared by Marcel Merchat</H5>
+<H5>April 3, 2016</H5>
+<H3>Purpose:</H3>
+<H5>This website explores possible explanations and relationships                
+ of water level fluctuations of Lake Huron which lies                  between 
+the United States and Canada. It also includes                 Lake Michigan 
+because the two lakes are joined near Mackinac                 Island. The 
+common level of these very large lakes is more like                 an ocean 
+than a river or typical lake because they                  do not seem to be 
+related to the amount of rain. The lake level                  can only change 
+about a foot over a period of many months.                There are short term 
+fluctuations of up to 10-feet or more due                to high wind and waves 
+but these average to zero when the                weather returns to calm 
+conditions.</H5>
+<H3>Raw Data for Analysis</H3>
+<H5>The basic R program is distributed with three standard                 
+datasets that we use to analyze and predict the level                of Lake 
+Huron. We use the following datasets for our analysis.</H5>
+<H5>A. LakeHuron - Annual Lake Levels starting in 1875</H5>
+<H5>B. sunspot.month - Monthly sunspot count starting in 1749</H5>
+<H5>C. nhtemp - Annual temperatures in New Haven, CT                from 
+1912-1971.</H5></FORM></DIV>
+<DIV class="col-sm-8">
+<H3>Raw Data for the Analysis</H3>
+<H5>In order to expore the fluctuations                 of Lake Huron, we built 
+a data frame for                the 58 years from 1914-1971 using                
+the R datasets described in the left column.                The derived data 
+frame lists the temperature, sunspot,                 and lake level data for 
+direct comparison and analysis. The                 three-year running averages 
+of the temperature and sunspot                counts taken from the raw R 
+datasets are listed in the new                data frame. The code for this is 
+part of the server program.</H5>
+<H3>Exploratory Plots:</H3>
+<H4>Running Three-Year Average Temperature</H4>
+<H5>Figure-1 below shows that the lake levels were often high                
+when the three-year running average temperature was low                as was 
+the case just before 1920, but the reverse did not hold                when the 
+temperature later increased during the period                from 
+1940-1954.</H5>
+<H5>Enter 1 into the box below to see a plot of the effect                   of 
+temperature.</H5>
+<H4>Sunspot Activity:</H4>
+<H5>High lake levels coincided with high sunspot counts and the                
+level peaked with sunspot activity in the period before 1935                and 
+after 1965, but this did not hold as the temperature                increased 
+during the years from 1940-1954.</H5>
+<H5>Enter 2 into the box below to see a plot of the effect                   of 
+sunspot activity. To compare temperature and sunspot                    levels, 
+enter 3 into the box.</H5>
+<H3>Choose Desired Plot:</H3>
+<H5>Enter 1, 2, or three as follows:</H5>
+<H5>1 - Lake Level and New Haven Temperature</H5>
+<H5>2 - Lake Level and Sunspot Count</H5>
+<H5>3 - Sunspot Count and New Haven Temperature</H5>
+<DIV class="form-group shiny-input-container"><LABEL for="id1">Choose Desired 
+Plot, labeled id1</LABEL>           <INPUT class="form-control" id="id1" type="number" min="1" max="3" step="1" value="1"></DIV>
+<H2>Figure-1</H2>
+<DIV class="shiny-plot-output" id="plot1" 
+style="width: 100%; height: 400px;"></DIV>
+<H3>Regression Analysis:</H3>
+<H5>In order to expore the level fluctuations of Lake Huron,                we 
+built a regression model using the lm function                in an attempt to 
+predict the lake level from                the three-year running temperature 
+and sunspot counts.                Our model includes an interactive term data 
+frame for joint                   sunspot-temperature interaction.</H5>
+<H3>Regression Model</H3>
+<H5>The model is based on temperature dependance with                 adjustment 
+for sunspot level. The sunspot level is                 represented as a binary 
+high or low variable.</H5>
+<H5>Red dots in Figure-2 below represent high sunspot                     years 
+when the level was higher than the 75th percentile                   which 
+corresponded 1075 sunspots per year. Black dots indicate                   
+average and sunspot levels below 1075.                   The limit of 1075 
+sunspots that defines high and low sunspot                   years can be 
+adjusted using the slider below.</H5>
+<H4>Conditioning Effect of Temperature</H4>
+<H5>High lake levels coincided with high sunspot counts for                 both 
+high and low temperatures. The lake level was about                 average for 
+sunspot levels greater than the 75th percentile.                  Low lake 
+levels only occurred when sunspot counts were low.</H5>
+<H5>The red line in Figure-2 is the best fit line for                 high 
+sunspot years when the level was higher than                 the 75th percentile 
+which corresponded 1075 sunspots per year.                 The black line is the 
+best fit line for average and lower                 sunspot levels. The limit of 
+1075 sunspots that defines high                and low sunspot years can be 
+adjusted using the slider below.</H5>
+<H4>Adjust High-Count Sunspot Detection Limit</H4>
+<H5>Use the the slider below to raise the limit                   for inclusion 
+as a high sunspot year.</H5>
+<DIV class="form-group shiny-input-container"><LABEL class="control-label" for="spotadjust">Adjust 
+high spot limit</LABEL>           
+<INPUT class="js-range-slider" id="spotadjust" data-data-type="number" data-drag-interval="true" data-keyboard-step="16.6666666666667" data-keyboard="true" data-prettify-separator="," data-grid-snap="false" data-grid-num="6" data-grid="true" data-step="50" data-from="0" data-max="300" data-min="0"> 
+        </DIV>
+<H2>Figure-2</H2>
+<DIV class="shiny-plot-output" id="plot2" 
+style="width: 100%; height: 400px;"></DIV>
+<H5>The highest sunspot levels corresponded to above average                  
+temperatures and high lake levels. To see the effect of the                 
+highest sunspot counts of 1375 or more, adjust the slider                 to 300 
+at the right side. The red line in Figure-2 indicates                 the 
+expected lake level increases with temperature                 in this 
+case.</H5></DIV></DIV></DIV></BODY></HTML>
+>>>>>>> master
